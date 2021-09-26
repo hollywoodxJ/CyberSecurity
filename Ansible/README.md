@@ -40,7 +40,7 @@ The configuration details of each machine may be found below.
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the Jump Host machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- 174.89.233.57
+- <Local Machine IP>
 
 Machines within the network can only be accessed by Jump Host.
 - The Ansible container contained the ELK Machine. The IP Address is 10.1.0.4.
@@ -52,7 +52,7 @@ A summary of the access policies in place can be found in the table below.
 | Jump Host 	| Yes                 	| 10.0.1.4           	|
 | Web 1     	| No                  	| 10.0.0.5           	|
 | Web 2     	| No                  	| 10.0.0.7           	|
-| ELK-VM    	| No                  	| 10.1.0.4           	|
+| ELKserver    	| No                  	| 10.1.0.4           	|
 
 ### Elk Configuration
 
@@ -67,6 +67,7 @@ The playbook implements the following tasks:
 - Increases Virtual Memory
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
+
 ![Docker PS Command](Images/DockerPS.png)
 
 ### Target Machines & Beats
@@ -89,7 +90,7 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the filebeat-playbook.yml and metricbeat-playbook.yml file to /etc/ansible/roles.
 - Update the /etc/ansible/roles file to include the IP address of the Webservers and ELKservers.
-- Run the playbook, and navigate to https://40.117.116.54:5601/app/kibana to check that the installation worked as expected.
+- Run the playbook, and navigate to https://<ELKserver-Public-IP>:5601 to check that the installation worked as expected.
 
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
