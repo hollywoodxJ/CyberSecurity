@@ -40,7 +40,7 @@ The configuration details of each machine may be found below.
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the Jump Host machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- <Local Machine IP>
+- (Local Machine IP)
 
 Machines within the network can only be accessed by Jump Host.
 - The Ansible container contained the ELK Machine. The IP Address is 10.1.0.4.
@@ -90,7 +90,7 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the filebeat-playbook.yml and metricbeat-playbook.yml file to /etc/ansible/roles.
 - Update the /etc/ansible/roles file to include the IP address of the Webservers and ELKservers.
-- Run the playbook, and navigate to https://<ELKserver-Public-IP>:5601 to check that the installation worked as expected.
+- Run the playbook, and navigate to https://(ELKserver-Public-IP):5601 to check that the installation worked as expected.
 
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
