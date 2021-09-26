@@ -67,7 +67,7 @@ The playbook implements the following tasks:
 - Increases Virtual Memory
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
-![(Ansible/Images/DockerPS.png)]
+![Docker PS Command](Ansible/Images/DockerPS.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
