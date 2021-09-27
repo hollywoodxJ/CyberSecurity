@@ -1,0 +1,15 @@
+The times the losses occurred on each day.
+- The times that the losses occurred were on
+ 
+May 10: 5:00AM, 8:00AM, 2:00PM, 8:00PM, 11:00PM
+May 12: 5:00AM, 8:00AM, 2:00PM, 8:00PM, 11:00PM
+May 10: 5:00AM, 8:00AM, 2:00PM
+
+If there is a certain player that was playing during each of those times.
+- Mylie Schmidt was the player that was playing during each of those times losses occurred.
+
+The total count of times this player was playing.
+- The total number of times this player was playing was 13.
+
+To determine the number of times this player was playing the command line used was
+grep -wc "Mylie Schmidt" Roulette_Loses
