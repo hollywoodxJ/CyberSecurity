@@ -12,7 +12,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
 ![Metricbeat Playbook](metricbeat-playbook.yml)
 
-![Webservers](webservers.yml)
+![Webservers](install-webservers.yml)
 
 
 This document contains the following details:
@@ -76,6 +76,12 @@ The playbook implements the following tasks:
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
 ![Docker PS Command](Images/DockerPS.png)
+![ELK Server](Images/Elkserver.png)
+![Webservers](Images/Webservers.png)
+![Filebeat](Images/Filebeat.png)
+![Metricbeat](Images/Metricbeat.png)
+
+
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -102,3 +108,6 @@ SSH into the control node and follow the steps below:
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
 
+ansible-playbook filebeat-playbook.yml
+
+ansible-playbook metricbeat-playbook.yml

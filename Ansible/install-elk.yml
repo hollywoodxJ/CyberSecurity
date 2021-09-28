@@ -1,5 +1,5 @@
 ---
-- name: Configure Elk VM with Docker
+- name: Configure ELK VM with Docker
   hosts: elk
   remote_user: webadmin
   become: true
